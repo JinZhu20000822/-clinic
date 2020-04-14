@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bdffb404-25e3-4aa3-980f-4a0d18ce507a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/http/HttpClientHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/interceptor/SsoCookieWrapperInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/response/RespBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/response/Response.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/response/ResponseEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/swagger/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/utils/PageHelpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/classes/cn/jinzhu/cli/common/http/HttpClientHelper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/classes/cn/jinzhu/cli/common/interceptor/SsoCookieWrapperInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/classes/cn/jinzhu/cli/common/response/RespBean.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/classes/cn/jinzhu/cli/common/response/Response.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/classes/cn/jinzhu/cli/common/response/ResponseEnum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/classes/cn/jinzhu/cli/common/swagger/SwaggerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/classes/cn/jinzhu/cli/common/utils/PageHelpers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/cli-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/AuthserverJdbcApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/config/AuthServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/config/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/controller/OauthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/domain/TbPermission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/domain/TbUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/mapper/TbPermissionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/mapper/TbUserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/service/TbPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/service/TbUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/resources/mapper/TbPermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/resources/mapper/TbUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/META-INF/cli-server-auth.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/AuthserverJdbcApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/config/AuthServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/config/WebSecurityConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/config/service/UserDetailsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/controller/OauthController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/domain/TbPermission$TbPermissionBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/domain/TbPermission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/domain/TbUser$TbUserBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/domain/TbUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/mapper/TbPermissionMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/mapper/TbUserMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/service/TbPermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/service/TbUserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/mapper/TbPermissionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/mapper/TbUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/cli-server-auth-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/src/main/java/cn/jinzhu/cli/authresource/AuthResourceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/src/main/java/cn/jinzhu/cli/authresource/config/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/src/main/java/cn/jinzhu/cli/authresource/controller/ContentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/src/main/java/cn/jinzhu/cli/authresource/domain/TbContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/src/main/java/cn/jinzhu/cli/authresource/mapper/TbContentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/src/main/java/cn/jinzhu/cli/authresource/service/ContentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/src/main/resources/mapper/TbContentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/classes/cn/jinzhu/cli/authresource/AuthResourceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/classes/cn/jinzhu/cli/authresource/config/ResourceServerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/classes/cn/jinzhu/cli/authresource/controller/ContentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/classes/cn/jinzhu/cli/authresource/domain/TbContent$TbContentBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/classes/cn/jinzhu/cli/authresource/domain/TbContent.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/classes/cn/jinzhu/cli/authresource/mapper/TbContentMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/classes/cn/jinzhu/cli/authresource/service/ContentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/classes/mapper/TbContentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/cli-server-resource-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-resource/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/MasterDataApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/resources/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/classes/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/classes/cn/jinzhu/cli/masterdata/MasterDataApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/cli-master-data-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/MedicineApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/META-INF/cli-medicine.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/cn/jinzhu/cli/medicine/MedicineApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/cn/jinzhu/cli/medicine/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/cn/jinzhu/cli/medicine/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/cli-medicine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/PrescriptionApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/config/HisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/hos/AdivceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/hos/DiagInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/hos/PatienInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/newl/DiagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/PatienInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/mapper/hos/PatienInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service/hos/PatienInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/hos/PatienInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/META-INF/cli-prescription.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/META-INF/spring-devtools.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/PrescriptionApp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/config/HisConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/config/MvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/DemoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/hos/AdivceController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/hos/DiagInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/hos/PatienInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/newl/DiagController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/entity/hos/PatienInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/mapper/hos/PatienInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/service/hos/PatienInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/mapper/hos/PatienInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/cli-prescription-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/分布式业务模块说明.text" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="mapper" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\java\Maven\apache-maven-3.3.9\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Maven/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="C:\Users\Lenovo\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1aOrKWPwQq1M3knD13rsB1c1pGv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.22068965" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\诊所\cli\cli-server-web\cli-prescription\src\main\java\cn\jinzhu\cli\prescription\service" />
+      <recent name="D:\java\诊所\cli\cli-server-web\cli-prescription\src\main\resources" />
+      <recent name="D:\java\诊所\cli\cli-server-web\cli-medicine\src\main\resources" />
+      <recent name="D:\java\诊所\cli\cli-server-web\cli-master-data\src\main\resources" />
+      <recent name="D:\java\诊所\cli\cli-server-web\cli-medicine\src\main\java\cn\jinzhu\cli\medicine" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.jinzhu.cli.prescription.entity" />
+      <recent name="cn.jinzhu.cli.prescription.service.hos" />
+      <recent name="cn.jinzhu.cli.masterdata" />
+      <recent name="cn.jinzhu.cli.medicine.controller" />
+      <recent name="cn.jinzhu.cli.prescription.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\java\诊所\cli\cli-web-server-web" />
+      <recent name="D:\java\诊所\cli\cli-prescription\src\main\java\cn\jinzhu\cli\prescription\controller" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.PrescriptionApp">
+    <configuration name="AuthResourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cli-server-resource" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.jinzhu.cli.authresource.AuthResourceApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuthserverJdbcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cli-server-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.jinzhu.cli.authserver.AuthserverJdbcApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MasterDataApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cli-master-data" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.jinzhu.cli.masterdata.MasterDataApp" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MedicineApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cli-medicine" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.jinzhu.cli.medicine.MedicineApp" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrescriptionApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cli-prescription" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.jinzhu.cli.prescription.PrescriptionApp" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.AuthserverJdbcApplication" />
+      <item itemvalue="Spring Boot.PrescriptionApp" />
+      <item itemvalue="Spring Boot.MedicineApp" />
+      <item itemvalue="Spring Boot.MasterDataApp" />
+      <item itemvalue="Spring Boot.AuthResourceApplication" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bdffb404-25e3-4aa3-980f-4a0d18ce507a" name="Default Changelist" comment="" />
+      <created>1586617417987</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586617417987</updated>
+      <workItem from="1586617420539" duration="757000" />
+      <workItem from="1586665032569" duration="32183000" />
+      <workItem from="1586746586693" duration="15557000" />
+      <workItem from="1586772268770" duration="5679000" />
+      <workItem from="1586785066145" duration="2735000" />
+      <workItem from="1586841752065" duration="11766000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

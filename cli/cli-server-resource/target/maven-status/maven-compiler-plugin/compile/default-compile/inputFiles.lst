@@ -1,0 +1,6 @@
+D:\java\诊所\cli\cli-server-resource\src\main\java\cn\jinzhu\cli\authresource\AuthResourceApplication.java
+D:\java\诊所\cli\cli-server-resource\src\main\java\cn\jinzhu\cli\authresource\controller\ContentController.java
+D:\java\诊所\cli\cli-server-resource\src\main\java\cn\jinzhu\cli\authresource\config\ResourceServerConfig.java
+D:\java\诊所\cli\cli-server-resource\src\main\java\cn\jinzhu\cli\authresource\domain\TbContent.java
+D:\java\诊所\cli\cli-server-resource\src\main\java\cn\jinzhu\cli\authresource\mapper\TbContentMapper.java
+D:\java\诊所\cli\cli-server-resource\src\main\java\cn\jinzhu\cli\authresource\service\ContentService.java

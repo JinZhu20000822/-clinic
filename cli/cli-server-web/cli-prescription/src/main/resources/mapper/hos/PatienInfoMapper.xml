@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.prescription.mapper.hos.PatienInfoMapper">
+   <resultMap id="MapAllPatienInfo" type="cn.jinzhu.cli.prescription.entity.hos.PatienInfo">
+       <id  property="id" column="id"></id>
+       <result property="name" column="name"></result>
+       <result property="cardNo" column="card_no"></result>
+       <result property="sex" column="sex"></result>
+       <result property="age" column="age"></result>
+       <result property="birthday" column="birthday"></result>
+       <result property="phone" column="phone"></result>
+       <result property="idCard" column="id_card"></result>
+       <result property="address" column="address"></result>
+       <result property="addDetails" column="add_details"></result>
+       <result property="vip" column="vip"></result>
+       <result property="discount" column="discount"></result>
+   </resultMap>
+    <!--查询所有患者包过VIP和折扣，二表查询-->
+    <select id="getAllPatienInfo" resultMap="MapAllPatienInfo">
+       SELECT hpi.*,hmc.level AS vip ,hmc.discount AS  discount
+       FROM `hos_patien_info` hpi,`hos_member_cate` hmc
+       WHERE hpi.`type_id`=hmc.id
+    </select>
+
+   <!--添加新开就诊患者-->
+    <insert id="" parameterType="">
+        INSERT INTO `hos_patien_info`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                name,
+            </if>
+            <if test="card_no != null">
+                card_no,
+            </if>
+            <if test="sex != null">
+                sex,
+            </if>
+            <if test="age != null">
+                age,
+            </if>
+            <if test="birthday != null">
+                birthday,
+            </if>
+            <if test="phone != null">
+                phone,
+            </if>
+            <if test="id_card != null">
+                id_card,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+            <if test="add_details != null">
+                add_details,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                name,
+            </if>
+            <if test="cardNo != null">
+                cardNo,
+            </if>
+            <if test="sex != null">
+                sex,
+            </if>
+            <if test="age != null">
+                age,
+            </if>
+            <if test="birthday != null">
+                birthday,
+            </if>
+            <if test="phone != null">
+                phone,
+            </if>
+            <if test="idCard != null">
+                idCard,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+            <if test="addDetails != null">
+                addDetails,
+            </if>
+        </trim>
+    </insert>
+</mapper>

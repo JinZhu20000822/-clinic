@@ -1,0 +1,66 @@
+cli-parent 父模块
+
+cli-common 公用模块
+
+cli-server-auth oauth2授权服务模块                8081
+cli-server-resource oauth2资源服务模块            8083
+
+cli-server-web公用模块(依赖管理):{
+cli-master-data 基础数据模块                      8084
+cli-prescription 处方模块（新开就诊）              8085
+cli-medicine 药品模块                             8086
+}
+META-INF :优化web的pom.xml
+
+
+swagger
+
+@Api(tags = "用户数据接口")
+public class UserController {
+    //required = true表示在swagger中这个参数必填。只能在swagger中必填,defaultValue默认参数值
+    @ApiImplicitParam(name="id",value = "用户id",required = true,defaultValue = "1")//对应方法参数
+    @ApiOperation(value = "查询用户",notes = "根据用户id查询用户") //注释方法
+    @GetMapping("/user")
+    public User getUserById(Integer id){
+        User user=new User(1,"jinzhu","嗯嗯");
+        user.setId(id);
+        return  user;
+    }
+    @ApiOperation(value = "删除用户", notes = "根据用户id删除用户")
+    @ApiImplicitParam(name = "id", value = "用户id", required = true, defaultValue = "99")
+    @ApiResponses({ //自定义返回状态描述
+            @ApiResponse(code = 200, message = "删除成功"),
+            @ApiResponse(code = 500, message = "删除失败")
+    })
+    @DeleteMapping("/user/{id}")
+    public void deleteUserById(@PathVariable Integer id) {
+        System.out.println("deleteUserById:" + id);
+    }
+    @PutMapping("/user")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id", value = "用户id", required = true, defaultValue = "99"),
+            @ApiImplicitParam(name = "username", value = "用户名", required = true, defaultValue = "jinzhu")
+    })
+    @ApiOperation(value = "更新用户", notes = "根据用户id更新用户名")
+    public User updateUsernameById(String username, Integer id) {
+        User user = new User();
+        user.setId(id);
+        user.setUsername(username);
+        return user;
+    }
+    @PostMapping("/user")
+    @ApiOperation(value = "添加用户", notes = "添加用户接口")
+    public User addUser(@RequestBody User user) {
+        return user;
+    }
+}
+
+//swagger2 的实体类配置
+@ApiModel(value = "用户实体类",description = "用户信息描述类")
+public class User {
+    @ApiModelProperty(value = "用户id")
+    private Integer id;
+    @ApiModelProperty(value = "用户名")
+    private String username;
+    @ApiModelProperty(value = "用户地址")
+    private String address;

@@ -1,0 +1,11 @@
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\config\WebSecurityConfig.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\domain\TbUser.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\service\TbUserService.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\config\AuthServerConfig.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\mapper\TbUserMapper.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\AuthserverJdbcApplication.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\service\TbPermissionService.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\mapper\TbPermissionMapper.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\controller\OauthController.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\domain\TbPermission.java
+D:\java\诊所\cli\cli-server-auth\src\main\java\cn\jinzhu\cli\authserver\config\service\UserDetailsServiceImpl.java

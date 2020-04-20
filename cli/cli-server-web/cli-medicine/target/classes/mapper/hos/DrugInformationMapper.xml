@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.medicine.mapper.hos.DrugInformationMapper">
+    <resultMap id="MapDrugInformationByPrescriTypeId" type="cn.jinzhu.cli.medicine.entity.hos.PrescriType">
+        <id property="id" column="id"></id>
+        <result property="typeName" column="typeName"></result>
+        <result property="createDate" column="createDate"></result>
+        <collection property="drugCate" ofType="cn.jinzhu.cli.medicine.entity.hos.DrugCate" javaType="java.util.List">
+            <id property="id" column="drugId"></id>
+            <result property="cateName" column="cateName"></result>
+        <collection property="drugInformation" ofType="cn.jinzhu.cli.medicine.entity.hos.DrugInformation" javaType="java.util.List">
+                <id property="id" column="drid"></id>
+                <result property="commonName" column="commonName"></result>
+                <result property="sellPrice" column="sellPrice"></result>
+                <result property="invenDown" column="invenDown"></result>
+                <result property="standard" column="standard"></result>
+                <result property="singleUsage" column="singleUsage"></result>
+                <result property="day" column="day"></result>
+                <result property="total" column="total"></result>
+                <result property="frequency" column="frequency"></result>
+            <result property="pinyin" column="pinyin"></result>
+               <association property="usage" javaType="cn.jinzhu.cli.medicine.entity.hos.DrugUsage" >
+                    <result property="id" column="usageId"></result>
+                </association>
+            </collection>
+        </collection>
+
+
+    </resultMap>
+    <!-- 通过处方id查询每个药品分类下面的药品 -->
+    <select id="getDrugInformationByPrescriTypeId" resultMap="MapDrugInformationByPrescriTypeId">
+        SELECT pre.* ,dr.`common_name` AS commonName,dr.`standard` AS standard,dr.`sell_price` AS sellPrice,dr.`inven_down` AS invenDown, dr.`day`
+        AS DAY,dr.`total` AS total,dr.frequency AS frequency, dr.`single_usage` AS singleUsage ,dr.`id` AS drid,dr.`usage_id` AS usageId,drug.id AS drugId,drug.`cateName` AS cateName,
+        dr.pinyin as pinyin
+        FROM   `hos_prescri_type` pre
+        LEFT JOIN hos_drug_cate drug  ON drug.`prescri_type`=pre.id
+        LEFT JOIN hos_drug_information dr ON  drug.`id`=dr.`cate_id`
+          <where>
+              <if test="prescriType.id != 0 and prescriType.id != '' and prescriType.id != null">
+                drug.`prescri_type`=#{prescriType.id}
+            </if>
+              <if test=" commonName != '' and commonName != null">
+                and  (dr.`common_name` like concat('%',#{commonName},'%') or  dr.`pinyin` like concat('%',#{commonName},'%'))
+              </if>
+              <if test="drugId != 0  and drugId != '' and drugId != null">
+                  and  drug.id like concat('%',#{drugId},'%')
+              </if>
+          </where>
+    </select>
+
+
+</mapper>

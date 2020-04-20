@@ -14,12 +14,12 @@ import java.util.List;
 
 @Api(tags = "患者表hos_patien_info")
 @RestController
-@RequestMapping("/hos/patien")
+@RequestMapping("/api/prescription/hos/patien")
 public class PatienInfoController {
     @Autowired
-    PatienInfoService patienInfoService;
+    PatienInfoService patienInfoService;//患者表service
 
-    @ApiOperation(value = "查询患者",notes = "查询所有患者") //注释方法
+    @ApiOperation(value = "查询患者",notes = "查询所有患者")
     @GetMapping("/info")
     public List<PatienInfo> getByInfo() {
         return  patienInfoService.getAllPatienInfo();

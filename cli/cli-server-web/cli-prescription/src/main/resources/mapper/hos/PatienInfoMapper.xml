@@ -12,8 +12,10 @@
        <result property="idCard" column="id_card"></result>
        <result property="address" column="address"></result>
        <result property="addDetails" column="add_details"></result>
-       <result property="vip" column="vip"></result>
-       <result property="discount" column="discount"></result>
+       <association property="memberCate" javaType="cn.jinzhu.cli.masterdata.entity.hos.MemberCate">
+           <result property="discount" column="discount"></result>
+           <result property="level" column="vip"></result>
+       </association>
    </resultMap>
     <!--查询所有患者包过VIP和折扣，二表查询-->
     <select id="getAllPatienInfo" resultMap="MapAllPatienInfo">
@@ -23,7 +25,7 @@
     </select>
 
    <!--添加新开就诊患者-->
-    <insert id="" parameterType="">
+    <insert id="insertPatienInfo" parameterType="cn.jinzhu.cli.prescription.entity.hos.PatienInfo">
         INSERT INTO `hos_patien_info`
         <trim prefix="(" suffix=")" suffixOverrides=",">
             <if test="name != null">

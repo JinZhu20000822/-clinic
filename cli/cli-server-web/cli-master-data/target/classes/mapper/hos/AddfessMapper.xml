@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.masterdata.mapper.hos.AddfessMapper">
+   <resultMap id="MapAllAddfesse" type="cn.jinzhu.cli.masterdata.entity.hos.Addfess">
+       <id  property="id" column="id"></id>
+       <result property="addiName" column="addi_name"></result>
+       <result property="amount" column="amount"></result>
+       <result property="prescriTypeId" column="addi_type"></result>
+   </resultMap>
+    <!--查询所有附加类型-->
+    <select id="getAllAddfesse" resultMap="MapAllAddfesse">
+     SELECT * FROM `hos_addfess`
+    </select>
+
+
+</mapper>

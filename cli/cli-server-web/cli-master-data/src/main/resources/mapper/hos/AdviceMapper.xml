@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.masterdata.mapper.hos.AdviceMapper">
+   <resultMap id="MapAllAdvice" type="cn.jinzhu.cli.masterdata.entity.hos.Advice">
+       <id  property="id" column="id"></id>
+       <result property="content" column="content"></result>
+       <result property="createDate" column="createDate"></result>
+       <association property="user" javaType="cn.jinzhu.cli.masterdata.entity.hos.User">
+           <result property="id" column="create_id"></result>
+       </association>
+   </resultMap>
+    <!--查询所有患者包过VIP和折扣，二表查询-->
+    <select id="getAllAdvice" resultMap="MapAllAdvice">
+     SELECT * FROM `hos_advice`
+    </select>
+
+
+</mapper>

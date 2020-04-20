@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.prescription.mapper.med.MenCheckMapper">
+      <!--插入中药细名信息管理表,循环添加-->
+    <insert id="insertMenCheck">
+        INSERT INTO `clinic`.`med_men_check` (
+        `item_id`,
+        `quantity`,
+        `type_id`,
+        `amount`,
+        `doc_main_id`,
+        `remark`,
+        `price`,
+        `total`
+        )
+        VALUES
+     <foreach   item="men" collection="menChecks" separator="," open="(" close=")">
+         #{men.itemExamine.id},
+         #{men.quantity},
+         #{men.itemCate.id},
+         #{men.amount},
+         #{newdiagId},
+         #{men.remark},
+         #{men.price},
+         #{men.total},
+     </foreach>
+    </insert>
+</mapper>

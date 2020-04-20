@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.prescription.mapper.hos.PreTemplateMapper">
+   <resultMap id="getAllPreTemplate" type="cn.jinzhu.cli.prescription.entity.hos.PreTemplate">
+       <id  property="id" column="id"></id>
+       <result property="diagnosis" column="diagnosis"></result>
+       <result property="tempName" column="tempName"></result>
+       <result property="premiss" column="premiss"></result>
+       <result property="createDate" column="createDate"></result>
+       <result property="number" column="number"></result>
+       <result property="name" column="NAME"></result>
+       <result property="suoming" column="suoming"></result>
+       <association property="user" javaType="cn.jinzhu.cli.masterdata.entity.hos.User">
+           <result property="id" column="id"></result>
+           <result property="name" column="usname"></result>
+       </association>
+       <association property="prescriType" javaType="cn.jinzhu.cli.prescription.entity.hos.PrescriType">
+           <result property="typeName" column="typeName"></result>
+       </association>
+       <association property="itemType" javaType="cn.jinzhu.cli.prescription.entity.hos.ItemType">
+           <result property="xmmcName" column="xmmcname"></result>
+       </association>
+   </resultMap>
+        <resultMap id="getInfo" type="cn.jinzhu.cli.prescription.entity.hos.PreTemplate"  extends="getAllPreTemplate">
+            <collection property="drugInformations" ofType="cn.jinzhu.cli.medicine.entity.hos.DrugInformation" javaType="java.util.List">
+                <id property="id" column="drid"></id>
+                <result property="commonName" column="common_Name"></result>
+                <result property="sellPrice" column="sell_price"></result>
+                <result property="invenDown" column="inven_down"></result>
+                <result property="standard" column="standard"></result>
+                <result property="singleUsage" column="single_usage"></result>
+                <result property="day" column="day"></result>
+                <result property="total" column="total"></result>
+                <result property="frequency" column="frequency"></result>
+                <result property="pinyin" column="pinyin"></result>
+                <association property="usage" javaType="cn.jinzhu.cli.medicine.entity.hos.DrugUsage" >
+                    <result property="name" column="uname"></result>
+                </association>
+            </collection>
+        </resultMap>
+    <!--查询中西药摸板及摸板下的详情-->
+    <select id="getAllPreTemplatesDrugInformations" resultMap="getInfo">
+        SELECT tep.* ,drug.*,drug.id AS drid,u.name AS uname
+        ,us.name AS usname,pre.typeName AS typeName  FROM `hos_pre_template` tep, `hos_user` us ,`hos_prescri_type` pre,`hos_drug_information` drug,`hos_drug_usage` u
+        ,hos_info_temp info
+      <where>
+          tep.`create_id`=us.id AND  tep.`prescri_type`=pre.id AND tep.id=info.`mobanid` AND u.id=drug.`usage_id` AND  info.`yoapingid` =drug.id
+      <if test="premiss != null and premiss != ''">
+          and tep.`premiss` =#{premiss}
+      </if>
+          <if test="id != null and id != '' and id != 0">
+              and pre.`id` =#{id}
+          </if>
+      <if test="tempName != null and tempName != ''">
+          and  (tep.`tempName`  like concat('%',#{tempName},'%') or tep.`number` like concat('%',#{tempName},'%'))
+      </if>
+        </where>
+    </select>
+
+
+    <resultMap id="getitem" type="cn.jinzhu.cli.prescription.entity.hos.PreTemplate"  extends="getAllPreTemplate">
+        <collection property="itemExamines" ofType="cn.jinzhu.cli.masterdata.entity.hos.ItemExamine" javaType="java.util.List">
+            <id  property="id" column="itemId"></id>
+            <result property="name" column="itemName"></result>
+            <result property="remark" column="remark"></result>
+            <result property="price" column="price"></result>
+            <association property="itemUtil" javaType="cn.jinzhu.cli.masterdata.entity.hos.ItemUtil">
+                <result property="id" column="utilId"></result>
+                <result property="name" column="uname"></result>
+            </association>
+        </collection>
+    </resultMap>
+    <!--查询项目检查摸板及摸板下的详情-->
+    <select id="getAllPreTemplatesItemExamines" resultMap="getitem">
+        SELECT tep.* ,item.remark as remark,item.price as price,item.id AS itemId,item.name AS itemName,u.name AS uname ,us.name AS usname,pre.xmmc AS xmmcname
+        FROM `hos_pre_template` tep, `hos_user` us ,`hso_item_type` pre,`hos_item_examine` item,`hos_item_util` u,hos_examine_temp ex
+        <where>
+            tep.`create_id`=us.id AND tep.`prescri_type`=pre.id AND u.id=item.`util_id` AND  ex.jcxmid=item.`id`  AND ex.mobanid=tep.id
+            <if test="premiss != null and premiss != ''">
+                and tep.`premiss` =#{premiss}
+            </if>
+            <if test="id != null and id != '' and id != 0">
+                and pre.`id` =#{id}
+            </if>
+            <if test="tempName != null and tempName != ''">
+                and  (tep.`tempName`  like concat('%',#{tempName},'%') or tep.`number` like concat('%',#{tempName},'%'))
+            </if>
+        </where>
+    </select>
+</mapper>

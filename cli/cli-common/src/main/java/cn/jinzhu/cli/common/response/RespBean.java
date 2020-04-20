@@ -1,5 +1,8 @@
 package cn.jinzhu.cli.common.response;
 
+import lombok.Data;
+
+@Data
 public class RespBean {
     private Integer status;
     private String msg;
@@ -54,4 +57,13 @@ public class RespBean {
         this.obj = obj;
         return  this;
     }
+//    private String code;
+//    private long responseTime = System.currentTimeMillis();
+//    private String message;
+//    public RespBean(ResponseEnum responseEnum) {
+//        this.code = responseEnum.getCode();
+//        this.message = responseEnum.getMessage();
+//    }
+
+
 }

@@ -15,6 +15,7 @@
       <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/response/Response.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/response/ResponseEnum.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/swagger/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/utils/Consultation.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-common/src/main/java/cn/jinzhu/cli/common/utils/PageHelpers.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-common/target/classes/cn/jinzhu/cli/common/http/HttpClientHelper.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-common/target/classes/cn/jinzhu/cli/common/interceptor/SsoCookieWrapperInterceptor.class" afterDir="false" />
@@ -33,7 +34,7 @@
       <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/config/AuthServerConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/config/WebSecurityConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/config/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/controller/OauthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/controller/Oauth2Controller.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/domain/TbPermission.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/domain/TbUser.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/java/cn/jinzhu/cli/authserver/mapper/TbPermissionMapper.java" afterDir="false" />
@@ -43,13 +44,13 @@
       <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/resources/mapper/TbPermissionMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/resources/mapper/TbUserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-auth/src/main/resources/templates/oauth/confirm_access.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/META-INF/cli-server-auth.kotlin_module" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/AuthserverJdbcApplication.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/config/AuthServerConfig.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/config/WebSecurityConfig.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/config/service/UserDetailsServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/controller/OauthController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/domain/TbPermission$TbPermissionBuilder.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/domain/TbPermission.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-auth/target/classes/cn/jinzhu/cli/authserver/domain/TbUser$TbUserBuilder.class" afterDir="false" />
@@ -90,8 +91,42 @@
       <change afterPath="$PROJECT_DIR$/cli-server-resource/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/MasterDataApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/controller/hos/AddfessController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/controller/hos/AdivceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/controller/hos/DepartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/controller/hos/DiagInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/controller/hos/ItemExamineController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/Addfess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/Advice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/DiagInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/InvoiceItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/ItemCate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/ItemExamine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/ItemUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/MemberCate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/PackUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/entity/hos/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/mapper/hos/AddfessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/mapper/hos/AdviceMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/mapper/hos/DepartmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/mapper/hos/DiagInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/mapper/hos/ItemExamineMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/service/hos/AddfessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/service/hos/AdviceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/service/hos/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/service/hos/DiagInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/java/cn/jinzhu/cli/masterdata/service/hos/ItemExaminefessService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/resources/META-INF/spring-devtools.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/resources/mapper/hos/AddfessMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/resources/mapper/hos/AdviceMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/resources/mapper/hos/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/resources/mapper/hos/DiagInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/src/main/resources/mapper/hos/ItemExamineMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/classes/META-INF/spring-devtools.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/classes/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-master-data/target/classes/cn/jinzhu/cli/masterdata/MasterDataApp.class" afterDir="false" />
@@ -103,17 +138,28 @@
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/pom.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/MedicineApp.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/controller/hos/DrugCateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/controller/hos/DrugInformationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/entity/hos/DrugCate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/entity/hos/DrugDosage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/entity/hos/DrugInformation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/entity/hos/DrugUsage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/entity/hos/PrescriType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/mapper/hos/DrugCateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/mapper/hos/DrugInformationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/service/hos/DrugCateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/java/cn/jinzhu/cli/medicine/service/hos/DrugInformationService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/META-INF/spring-devtools.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/mapper/hos/DrugCateMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/mapper/hos/DrugInformationMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/src/main/resources/public/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/META-INF/cli-medicine.kotlin_module" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/META-INF/spring-devtools.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/cn/jinzhu/cli/medicine/MedicineApp.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/cn/jinzhu/cli/medicine/config/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/cn/jinzhu/cli/medicine/controller/UserController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/log4j.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/classes/public/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-medicine/target/cli-medicine-1.0-SNAPSHOT.jar" afterDir="false" />
@@ -125,17 +171,56 @@
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/PrescriptionApp.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/config/HisConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/DemoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/hos/AdivceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/hos/DiagInfoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/PrescriptionController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/hos/PatienInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/newl/DiagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/hos/PreTemplateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/med/MenCheckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/med/MenEatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/med/MenWesternController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/newl/DiagListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/newl/DiagMedListController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/controller/newl/NewDiagController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/ExamineItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/InfoItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/ItemType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/PatienEdu.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/PatienInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/PatienOcc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/PatienSourc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/PreTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/hos/PrescriType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/med/MenCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/med/MenEast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/med/MenWestern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/newl/DiagList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/newl/DiagMedlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/entity/newl/NewDiag.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/mapper/hos/PatienInfoMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/mapper/hos/PreTemplateMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/mapper/med/MenCheckMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/mapper/med/MenEastMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/mapper/med/MenWesternMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/mapper/newl/DiagListMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/mapper/newl/DiagMedlistMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/mapper/newl/NewDiagMapper.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service/hos/PatienInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service/hos/PreTemplateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service/med/MenCheckService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service/med/MenEatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service/med/MenWesternService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service/newl/DiagListService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service/newl/DiagMedlistService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service/newl/NewDiagService.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/META-INF/spring-devtools.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/application.properties" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/hos/PatienInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/hos/PreTemplateMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/med/MenCheckMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/med/MenEatMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/med/MenWestrenMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/newl/DiagListMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/newl/DiagMedListMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/newl/NewDiagMapper.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/public/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/META-INF/cli-prescription.kotlin_module" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/META-INF/spring-devtools.properties" afterDir="false" />
@@ -143,11 +228,7 @@
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/PrescriptionApp.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/config/HisConfig.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/config/MvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/DemoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/hos/AdivceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/hos/DiagInfoController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/hos/PatienInfoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/controller/newl/DiagController.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/entity/hos/PatienInfo.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/mapper/hos/PatienInfoMapper.class" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cli-server-web/cli-prescription/target/classes/cn/jinzhu/cli/prescription/service/hos/PatienInfoService.class" afterDir="false" />
@@ -198,7 +279,7 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\java\Maven\apache-maven-3.3.9\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../Maven/apache-maven-3.3.9" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../Maven/apache-maven-3.3.9" />
         <option name="userSettingsFile" value="C:\Users\Lenovo\.m2\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -219,26 +300,26 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/java/cn/jinzhu/cli/prescription/service" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/cli-server-web/cli-prescription/src/main/resources/mapper/med" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.22068965" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\java\诊所\cli\cli-server-web\cli-prescription\src\main\java\cn\jinzhu\cli\prescription\service" />
-      <recent name="D:\java\诊所\cli\cli-server-web\cli-prescription\src\main\resources" />
-      <recent name="D:\java\诊所\cli\cli-server-web\cli-medicine\src\main\resources" />
-      <recent name="D:\java\诊所\cli\cli-server-web\cli-master-data\src\main\resources" />
-      <recent name="D:\java\诊所\cli\cli-server-web\cli-medicine\src\main\java\cn\jinzhu\cli\medicine" />
+      <recent name="D:\java\诊所\-clinic\cli\cli-server-web\cli-prescription\src\main\resources\mapper\med" />
+      <recent name="D:\java\诊所\-clinic\cli\cli-server-web\cli-prescription\src\main\java\cn\jinzhu\cli\prescription\service" />
+      <recent name="D:\java\诊所\-clinic\cli\cli-server-web\cli-prescription\src\main\resources\mapper\newl" />
+      <recent name="D:\java\诊所\-clinic\cli\cli-server-web\cli-prescription\src\main\resources\mapper\hos" />
+      <recent name="D:\java\诊所\-clinic\cli\cli-server-web\cli-master-data\src\main\resources\mapper\hos" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.jinzhu.cli.prescription.entity" />
-      <recent name="cn.jinzhu.cli.prescription.service.hos" />
-      <recent name="cn.jinzhu.cli.masterdata" />
-      <recent name="cn.jinzhu.cli.medicine.controller" />
-      <recent name="cn.jinzhu.cli.prescription.controller" />
+      <recent name="cn.jinzhu.cli.prescription.service.med" />
+      <recent name="cn.jinzhu.cli.prescription.mapper.med" />
+      <recent name="cn.jinzhu.cli.prescription.controller.med" />
+      <recent name="cn.jinzhu.cli.prescription.controller.newl" />
+      <recent name="cn.jinzhu.cli.prescription.service.newl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\java\诊所\cli\cli-web-server-web" />
@@ -246,6 +327,11 @@
     </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -306,6 +392,16 @@
       <item itemvalue="Spring Boot.AuthResourceApplication" />
     </list>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -322,6 +418,16 @@
       <workItem from="1586772268770" duration="5679000" />
       <workItem from="1586785066145" duration="2735000" />
       <workItem from="1586841752065" duration="11766000" />
+      <workItem from="1586860169944" duration="6338000" />
+      <workItem from="1586910691070" duration="13745000" />
+      <workItem from="1586937956737" duration="3469000" />
+      <workItem from="1586942609761" duration="1377000" />
+      <workItem from="1586944125277" duration="15479000" />
+      <workItem from="1587013591470" duration="25799000" />
+      <workItem from="1587082637506" duration="37550000" />
+      <workItem from="1587183293004" duration="8463000" />
+      <workItem from="1587197033659" duration="9127000" />
+      <workItem from="1587340938048" duration="309000" />
     </task>
     <servers />
   </component>
@@ -333,10 +439,17 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/-clinic" />
+    </ignored-roots>
   </component>
 </project>

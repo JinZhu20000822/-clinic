@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.masterdata.mapper.hos.DepartmentMapper">
+    <resultMap id="maptAllDepartmentUserBydepId" type="cn.jinzhu.cli.masterdata.entity.hos.Department">
+        <id property="id" column="id"></id>
+        <result property="name" column="depName"></result>
+        <collection property="user" ofType="cn.jinzhu.cli.masterdata.entity.hos.User" javaType="java.util.List">
+            <id property="id" column="usId"></id>
+            <result property="name" column="usName"></result>
+        </collection>
+    </resultMap>
+    <!--查询所有科室和科室下的员工-->
+    <select id="getAllDepartmentUserBydepId" resultMap="maptAllDepartmentUserBydepId">
+        SELECT dep.id AS id,dep.name AS depName ,us.name AS usName,us.id AS usId FROM `hos_user` us
+<!--        <if test="id == 1">-->
+<!--            LEFT JOIN hos_department dep  ON dep.id=us.unified-->
+<!--        </if>-->
+<!--        <if test="id != 1">-->
+        LEFT JOIN hos_department dep  ON dep.id=us.dep_id
+<!--        </if>-->
+        <where>
+            <if test="id != 0 and id != '' and id != null and id !=1">
+                dep_id=#{id}
+            </if>
+
+        </where>
+
+    </select>
+
+
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.prescription.mapper.newl.NewDiagMapper">
+      <!--插入诊断信息和医嘱信息最大id-->
+   <select id="getNewDiagCount" resultType="java.lang.Integer">
+     SELECT MAX(id) AS newdiagId FROM  `clinic`.`newl_diag`
+   </select>
+     <!--/*添加医嘱诊断患者关联表。最大表，新开就诊表*/-->
+    <insert id="insertNewDiag" parameterType="cn.jinzhu.cli.prescription.entity.newl.NewDiag">
+        insert into ` clinic `.` newl_diag `
+	(` id `,
+	` consultation_type `,
+	` other_diag `,
+	` other_med `,
+	` patient_id `
+	)
+	values
+	(0,
+	#{typeName},
+	#{otherdiag},
+	#{othermed},
+	#{patientId}
+	);
+    </insert>
+</mapper>

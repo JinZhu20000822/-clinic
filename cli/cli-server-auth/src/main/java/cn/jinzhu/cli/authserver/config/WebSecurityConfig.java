@@ -47,6 +47,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
 
+
     @Override
     public void configure(WebSecurity web) {
         web.ignoring().antMatchers("/oauth/check_token");

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.prescription.mapper.med.MenWesternMapper">
+      <!--插入中药细名信息管理表,循环添加-->
+    <insert id="insertMenWestern">
+        INSERT INTO `clinic`.`med_men_western` (
+        `id`,
+        `drug_id`,
+        `single_usage`,
+        `usage_id`,
+        `frequency`,
+        `day`,
+        `total`,
+        `price`,
+        `doc_main_id`
+        )
+        VALUES
+     <foreach   item="men"  collection="menWesterns" separator="," open="(" close=")">
+         #{men.information.id},
+         #{men.singleUsage},
+         #{men.usage.id},
+         #{men.frequency},
+         #{men.day},
+         #{men.total},
+         #{men.price},
+         #{newdiagId},
+     </foreach>
+    </insert>
+</mapper>

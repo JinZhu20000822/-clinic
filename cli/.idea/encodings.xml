@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cli-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cli-server-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cli-server-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cli-server-resource" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cli-server-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cli-server-web/cli-master-data" charset="UTF-8" />

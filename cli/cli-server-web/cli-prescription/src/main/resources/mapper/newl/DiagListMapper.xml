@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jinzhu.cli.prescription.mapper.newl.DiagListMapper">
+      <!--插入诊断信息管理表,循环添加-->
+    <insert id="insertDiagList">
+        INSERT INTO `clinic`.`newl_diag_list` (`diag_id`, `newdiag_id`) values
+     <foreach    item="ids" collection="diagIds" separator="," open="(" close=")">
+         #{ids},#{newdiagId}
+     </foreach>
+    </insert>
+</mapper>

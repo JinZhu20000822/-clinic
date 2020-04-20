@@ -20,6 +20,7 @@ Maven POM POM( Project Object Model,项目对象模型 ) 是 Maven 工程的基�
         <module>cli-server-auth</module>
         <module>cli-server-resource</module>
         <module>cli-server-web</module>
+
     </modules>
     <dependencies>
         <dependency>
